@@ -6,7 +6,7 @@ class BoxCard extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Container(
+    return Ink( //O Ink funciona como um Container, porém deve ser usado junto com o InkWell.
       padding: const EdgeInsets.all(16),
       decoration: BoxDecoration(
         boxShadow: kElevationToShadow[3],
