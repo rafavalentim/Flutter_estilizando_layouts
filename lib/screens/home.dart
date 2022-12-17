@@ -4,6 +4,7 @@ import 'package:alubank/components/sections/recent_activity.dart';
 import 'package:flutter/material.dart';
 import '../components/content_division.dart';
 import '../components/sections/account_actions.dart';
+import '../components/sections/account_scores.dart';
 import '../components/sections/header.dart';
 import '../theme/theme_colors.dart';
 
@@ -12,12 +13,16 @@ class Home extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold( body: Column(
-      children:  <Widget>[
-        Header(),
-        RecentActivity(),
-        AccountActions(),
-      ],
-    ),);
+    return Scaffold( 
+      body: SingleChildScrollView(
+        child: Column(
+        children:  <Widget>[
+          Header(),
+          RecentActivity(),
+          AccountActions(),
+          AccountScores(),
+        ],
+    ),
+      ),);
   }
 }

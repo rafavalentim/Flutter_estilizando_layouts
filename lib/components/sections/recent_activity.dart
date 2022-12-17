@@ -88,7 +88,7 @@ class _RecentActivityContent extends StatelessWidget {
         ),
         const Padding(
           padding: EdgeInsets.only(top: 8.0, bottom: 8.0),
-          child: ContentDivision(),
+          child: ContentDivision(width: 400,),
         ),
         const Text(
             'Esse mês você gastou \$1500.00 com jogos. Tente abaixar esse custo!'),

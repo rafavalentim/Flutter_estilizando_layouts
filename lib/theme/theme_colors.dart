@@ -13,6 +13,11 @@ class ThemeColors{
     'income': Color.fromRGBO(191, 69, 198, 1.0),
   };
 
+  static const accountScores = {
+    'free_delivery': Color.fromRGBO(250, 0, 112, 1.0),
+    'streaming_month': Color.fromRGBO(75, 89, 191, 1.0),
+  };
+
   static const division = Color.fromRGBO(166, 166, 166, 1.0);
 
 }
